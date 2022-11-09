@@ -1,0 +1,74 @@
+<!--AUTHOR MIHIR MESIA-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "./css/dashboard.css"/>
+    <link rel = "stylesheet" href = "./css/navbar.css"/>
+     <!-- Meta Info -->
+    <link rel="icon" href="./assests/brain.png" />
+    <title>QuizScript</title>
+    <meta name="author" content="Harshit Gajjar Mihir Mesia" />
+    <meta
+      name="description"
+      content="This is a quiz website, where users can test their knowledge on various topics and get scores. A website where users can have a friendly match and see the quiz game results" />
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="app_title">QuizScript</div>
+            <a href="/" class="toggle_button">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </a>
+            <div class="navbar_links">
+              <ul>
+                <li id = "cat_re">Categories</li>
+                <li id = "sign_out">Sign Out</li>
+              </ul>
+            </div>
+          </nav>
+    </header>
+
+    <div class = "container">
+        <div class = "user_title">
+            <p class = "username"></p>
+            </div>
+       
+        <div class = "record">
+          <p class = "title">Single Player Records</p>
+            <table class = "records">
+                <tr>
+                <th>Topic</th>
+                <th>Score</th>
+                <th>Date</th>
+                </tr>
+                
+            </table>
+        </div>
+
+        <div class = "mulRecord">
+          <p class = "title">Multiplayer Player Records</p>
+          <table class = "mulRecords" >
+              <tr>
+              <th>Topic</th>
+              <th>Opponent</th>
+              <th>Result</th>
+              <th>Date</th>
+              </tr>
+              
+          </table>
+      </div>
+    </div>
+<!-- Author: Harshit Gajjar & Mihir Mesia -->
+    <div class="delete">
+      <button id="delete_user" class="delete_btn">Delete Profile</button>
+      <button id = "delete_record" class = "delete_btn">Delete Records</button>
+    </div>
+  </div>
+    <script src = "./scripts/dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+/*AUTHOR MIHIR MESIA*/
+html {
+  font-size: 62.5%;
+}
+body {
+  margin: 0;
+  background: #4e54c8; /* fallback for old browsers */
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.user_title {
+  justify-content: center;
+}
+
+.username {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+.record {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background: #8f94fb;
+}
+.records {
+  width: 100%;
+  text-align: center;
+}
+
+.mulRecords {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.delete {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5rem;
+}
+
+.delete_btn {
+  background: rgba(34, 39, 47, 1);
+  color: #fff;
+  border: none;
+  padding: 1rem 2.5rem;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin: 7.5px;
+}
+
+.record tr:nth-child(even) {
+  background-color: #4e54c8;
+}
+.record td {
+  font-size: 1.5rem;
+}
+.record th {
+  font-size: 1.5rem;
+}
+.records {
+  width: 100%;
+  text-align: center;
+  padding: 2.5rem;
+}
+
+.mulRecord tr:nth-child(even) {
+  background-color: #4e54c8;
+}
+.mulRecord td {
+  font-size: 1.5rem;
+}
+.mulRecord th {
+  font-size: 1.5rem;
+}
+.mulRecords {
+  padding: 1.5rem;
+}
+
+.mulRecord {
+  margin: 1.5rem;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  background: #8f94fb;
+}
+
+@media screen and (min-width: 768px) {
+  .username {
+    font-size: 3.5rem;
+    font-weight: 800;
+  }
+  .title {
+    margin: 1.5rem;
+    font-size: 2.5rem;
+  }
+
+  .mulRecord {
+    margin: 1.5rem;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .record tr:nth-child(even) {
+    background-color: #4e54c8;
+  }
+  .record td {
+    font-size: 2.5rem;
+  }
+  .record th {
+    font-size: 2.5rem;
+  }
+  .records {
+    width: 100%;
+    text-align: center;
+    padding: 3.5rem;
+  }
+
+  .mulRecord tr:nth-child(even) {
+    background-color: #4e54c8;
+  }
+  .mulRecord td {
+    font-size: 2.5rem;
+  }
+  .mulRecord th {
+    font-size: 2.5rem;
+  }
+  .mulRecords {
+    padding: 2.5rem;
+  }
+  .delete {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+  }
+}

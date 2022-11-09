@@ -1,0 +1,17 @@
+[
+  {
+    "category_name": "Node JS",
+    "category_description": "Test your skills in Node JS",
+    "category_image": "https://www.devteam.space/wp-content/uploads/2022/05/nodejs.jpg"
+  },
+  {
+    "category_name": "Javascript",
+    "category_description": "Test your skills in Javascript",
+    "category_image": "https://www.computerhope.com/jargon/j/javascript.png"
+  },
+  {
+    "category_name": "CSS",
+    "category_description": "Test your skills in CSS",
+    "category_image": "https://wptips.rbchosting.com/wp-content/uploads/2020/08/creative-css3-tutorials-1024x587.jpg"
+  }
+]

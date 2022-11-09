@@ -1,0 +1,124 @@
+/*AUTHOR MIHIR MESIA*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: rgba(34, 39, 47, 1);
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  background: rgba(111, 190, 141, 1);
+}
+
+.ques {
+  width: 100%;
+}
+
+.ques > p {
+  text-align: center;
+  font-size: 2.5rem;
+  padding: 2rem;
+}
+
+.options {
+  width: 100%;
+  background: rgb(68, 78, 94);
+  display: flex;
+  flex-direction: column;
+}
+
+.option {
+  margin: 2rem;
+  background: white;
+}
+
+.active {
+  background: peru;
+}
+.correct_ans {
+  background: green;
+}
+
+.option:hover {
+  display: pointer;
+}
+
+.option p {
+  padding: 2rem;
+  font-size: 2.5rem;
+}
+
+p {
+  text-align: left;
+}
+
+.next {
+  background: rgb(68, 78, 94);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.next_button {
+  margin: 1.5rem;
+  height: 4rem;
+  width: 6rem;
+  font-size: large;
+  background-color: steelblue;
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    width: 80%;
+  }
+
+  .ques > p {
+    font-size: 3.5rem;
+    padding: 2.5rem;
+  }
+
+  .option {
+    margin: 3rem;
+  }
+
+  .option p {
+    padding: 2.5rem;
+    font-size: 3.2rem;
+  }
+
+  .next {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .next_button {
+    margin: 2.5rem;
+    width: 8rem;
+    height: 6rem;
+    font-size: 3rem;
+    background-color: steelblue;
+  }
+}

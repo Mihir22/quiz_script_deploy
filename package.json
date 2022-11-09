@@ -1,0 +1,41 @@
+{
+  "name": "quizscript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node ./node_modules/nodemon/bin/nodemon.js ./bin/www.js",
+    "devStart": "nodemon app.js",
+    "initcat": "mongoimport -d QuizStart -c categories --jsonArray --file ./data/categories.json",
+    "initques": "mongoimport -d QuizStart -c questions --jsonArray --file ./data/questions.json"
+  },
+  "engines": {
+    "node":"16.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HarshitG24/QuizScript.git"
+  },
+  "keywords": [],
+  "author": "Harshit Gajjar Mihir Mesia",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HarshitG24/QuizScript/issues"
+  },
+  "homepage": "https://github.com/HarshitG24/QuizScript#readme",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "mongodb": "^4.11.0",
+    "socket.io": "^4.5.3",
+    "socket.io-client": "^4.5.3"
+  },
+  "devDependencies": {
+    "eslint": "^8.26.0",
+    "eslint-config-prettier": "^8.5.0",
+    "nodemon": "^2.0.20"
+  }
+}

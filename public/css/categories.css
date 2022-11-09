@@ -1,0 +1,342 @@
+/* navbar */
+/*AUTHOR MIHIR MESIA*/
+:root {
+  --black-color: rgb(3, 3, 3);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  background: #3d7eaa;
+  background: -webkit-linear-gradient(to top, #ffe47a, #3d7eaa);
+  background: linear-gradient(to top, #ffe47a, #3d7eaa);
+}
+
+/* categories card */
+
+.page_title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  width: 100%;
+  text-align: center;
+  color: ghostwhite;
+}
+.project_grid {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.my_project {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: blueviolet;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  flex-direction: column;
+  margin: 4rem;
+  border: 2px solid var(--black-color);
+}
+
+.buttons {
+  position: absolute;
+  display: none;
+  font-size: x-large;
+  width: 100%;
+}
+
+.buttons ul {
+  padding: 0;
+  text-align: center;
+}
+
+.buttons ul li {
+  list-style: none;
+  padding: 1rem;
+  background: rgba(34, 39, 47, 1);
+  color: #fff;
+  border: 3px solid #fff;
+  border-radius: 1rem;
+  cursor: pointer;
+  width: 50%;
+  margin-left: 20%;
+  margin-bottom: 3rem;
+}
+
+.project_text {
+  width: 100%;
+  color: var(--white-color);
+  font-weight: 400;
+  text-align: center;
+  font-size: 3rem;
+  padding-top: 2rem;
+}
+
+.category_image {
+  width: 100%;
+  display: flex;
+  height: 30rem;
+  object-fit: fill;
+  align-items: center;
+  background: ghostwhite;
+}
+
+.category_parent {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(34, 39, 47, 1);
+}
+.category_name {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.category_details {
+  font-size: 1.5rem;
+  width: 100%;
+  background-color: rgba(34, 39, 47, 1);
+}
+
+.category_description {
+  padding-top: 1rem;
+  font-weight: 400;
+  color: white;
+}
+
+.github_link {
+  width: 20rem;
+  height: 3rem;
+  border: solid 1px var(--white-color);
+  background: none;
+  color: white;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+
+.github_link:hover {
+  background-color: var(--font-dynamic);
+}
+
+.game_on {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.hide {
+  display: none;
+}
+
+/*desktop*/
+
+@media screen and (min-width: 768px) {
+  /* .navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(34, 39, 47, 1);
+
+    position: sticky;
+  }
+  .app_title {
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    margin: 0.5rem;
+    margin-left: 4rem;
+    width: 50%;
+  }
+
+  .navbar_links {
+    padding-right: 2.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .navbar_links ul {
+    margin-right: 1.5rem;
+    display: flex;
+    width: 100%;
+  }
+
+  .navbar_links ul li {
+    list-style: none;
+    font-size: 4rem;
+    color: white;
+    padding: 1.5rem;
+  } */
+
+  .project_grid--1x3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* categories card */
+
+  .page_title {
+    font-size: 6rem;
+    font-weight: 800;
+    width: 100%;
+    text-align: center;
+    color: ghostwhite;
+  }
+  .project_grid {
+    display: grid;
+    padding: 1.5rem;
+    margin: 1.5rem;
+    justify-content: space-between;
+  }
+
+  .my_project {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: blueviolet;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    flex-direction: column;
+    margin: 4rem;
+    border: 2px solid var(--black-color);
+  }
+
+  .buttons {
+    position: absolute;
+    display: none;
+    font-size: xxx-large;
+  }
+
+  .buttons ul li {
+    list-style: none;
+    padding: 1rem;
+    font-size: 2.5rem;
+  }
+
+  /*.my_project:hover{
+      filter:blur(8px);
+    }*/
+
+  .project_text {
+    width: 100%;
+    color: var(--white-color);
+    font-weight: 400;
+    text-align: center;
+    font-size: 3rem;
+    padding-top: 2rem;
+  }
+
+  .category_image {
+    width: 100%;
+    display: flex;
+    height: 40rem;
+    object-fit: fill;
+    align-items: center;
+    background: ghostwhite;
+  }
+
+  .category_parent {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(34, 39, 47, 1);
+    height: 6rem;
+  }
+  .category_name {
+    font-size: 4rem;
+    color: white;
+  }
+
+  .category_details {
+    font-size: 1.5rem;
+    width: 100%;
+    background-color: rgba(34, 39, 47, 1);
+  }
+
+  .category_description {
+    padding: 1rem;
+    font-weight: 400;
+    font-size: 2.5rem;
+    color: white;
+  }
+
+  .github_link {
+    width: 20rem;
+    height: 3rem;
+    border: solid 1px var(--white-color);
+    background: none;
+    color: white;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+  }
+
+  .github_link:hover {
+    background-color: var(--font-dynamic);
+  }
+}
+
+/* MODAL */
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 1rem 1.5rem;
+  width: 24rem;
+  border-radius: 0.5rem;
+}
+
+.close-button {
+  float: right;
+  width: 1.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  background-color: lightgray;
+}
+
+.close-button:hover {
+  background-color: darkgray;
+}
+
+.model_data {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.game_code_or {
+  display: flex;
+  flex-direction: row;
+}
+
+.show-modal {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
