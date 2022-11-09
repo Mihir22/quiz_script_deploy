@@ -31,7 +31,8 @@ function windowOnClick(event) {
   }
 }
 function socketCall(name, userID) {
-  const socket = io("http://localhost:3000", {});
+  // const socket = io("http://localhost:5000", {});
+  const socket = io();
   socket.emit("new player", myGameCode);
 
   socket.on("update-game", (players) => {

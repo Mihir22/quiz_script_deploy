@@ -11,7 +11,8 @@ async function validateUser() {
 }
 
 document.addEventListener("DOMContentLoaded", async () => {
-  const socket = io("http://localhost:3000", {});
+  // const socket = io("http://localhost:5000", {});
+  const socket = io();
 
   const usId = await validateUser();
 

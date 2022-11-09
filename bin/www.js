@@ -14,8 +14,8 @@ debug("earthquaketracker:server");
  * Get port from environment and store in Express.
  */
 
-let port = normalizePort(process.env.PORT || "3001");
-app.set("port", port);
+// let port = normalizePort(process.env.PORT || "3001");
+// app.set("port", port);
 
 /**
  * Create HTTP server.
@@ -27,7 +27,7 @@ let server = http.createServer(app);
  * Listen on provided port, on all network interfaces.
  */
 
-server.listen(port);
+// server.listen(port);
 server.on("error", onError);
 server.on("listening", onListening);
 
