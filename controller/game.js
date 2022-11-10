@@ -13,6 +13,7 @@ function Game() {
   game.handle = (socket) => {
     socket.on("new player", () => {
       players.push(player.Player(socket.id, socket.id));
+      console.log("total players", players);
       socket.server.emit("update-game", players);
 
       if (players.length == 2) {
